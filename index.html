@@ -30,12 +30,145 @@
           }
         }
       </script>
+
+      <style>
+        .adlam-font{
+          font-family: "ADLaM Display", serif;
+        }
+       
+      </style>
 </head>
-<body>
-    <header>
-        <h1>hi this is a pet shop</h1>
+<body class="adlam-font">
+    <header >
+          <!-- nav section -->
+          <div class="navbar bg-[#FFF9F4] mx-auto md:px-20  lg:px-36 flex justify-between">
+
+            <div class="flex">
+              <img src="c1-assets/logo-header.png" alt="paws picture" class="h-8">
+              <a class="text-xl hidden md:block ">Browse<span class="text-yellow-400 text-=2xl">4</span>Pets</a>
+            </div>
+            <div class="hidden md:flex md:text-xl md:font-normal lg:text-xl lg:font-normal ">
+              <ul class="flex gap-6">
+                <li><a>Contact us</a></li>
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+            </div>
+
+            <div class="hidden md:flex md:gap-6">
+              <img src="c1-assets/ring.png" alt="notification icon" class="h-6">
+              <img src="c1-assets/search.png" alt="search button" class="h-6">
+              <button class="btn btn-outline btn-warning md:px-6 md:py-3">Login</button>
+              <button class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg ">Register</button>
+            </div>
+
+            <div class="flex-none md:hidden">
+              <button class="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-5 w-5 stroke-current">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        <!-- banner section -->
+        <div class=" bg-white w-full mx-auto md:py-12 md:w-9/12 " >
+          <!-- Left Section (Text) -->
+          <div class="space-y-6  lg:space-y-8 relative z-10 top-10  px-2 py-3 lg:mx-0 lg:my-0 ">
+              <h1 class="text-4xl font-bold leading-tight">
+                  Pamper Your Pet, <br> Because They Deserve <br>
+                  the Best
+              </h1>
+              <p class="text-gray-400 leading-8 font-thin">
+                  Discover a world of treats, toys, and essentials handpicked for <br>
+                  your furry friends.
+                  Shop now and make tails wag with joy!
+              </p>
+              <button class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
+                  Find a pet
+              </button>
+          </div>
+      
+          <!-- Right Section (Image) -->
+          <div class="relative  lg:bottom-60 ">
+
+              <img src="c1-assets/cat-big.png" alt="Pet" class="h-full rounded-lg  ">
+          </div>
+      </div> 
+      
     </header>
     <main>
+      <!-- browse section  -->
+       <section class="mx-4 lg:mx-auto md:py-12 lg:w-9/12 lg:mb-10">
+        <h1 class="text-3xl my-4 font-bold lg:my-8" >Browse by Categories</h1>
+        <!-- cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10"> 
+            <img src="/c1-assets/dog-cartoon.png" alt="dog-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Dog</h2>
+
+            <p class="font-thin text-sm">3 Items</p>
+          </div>
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10"> 
+            <img src="/c1-assets/fish-cartoon.png" alt="fish-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Fish</h2>
+
+            <p class="font-thin text-sm">3 Items</p>
+          </div>
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10"> 
+            <img src="/c1-assets/cat-cartoon.png" alt="cat-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Cat</h2>
+
+            <p class="font-thin text-sm">3 Items</p>
+          </div>
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10"> 
+            <img src="/c1-assets/bird-cartoon.png" alt="bird-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Bird</h2>
+
+            <p class="font-thin text-sm">3 Items</p>
+          </div>
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10"> 
+            <img src="/c1-assets/mouse-cartoon.png" alt="small-pet-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Small pet</h2>
+
+            <p class="font-thin text-sm"> 3 Items</p>
+          </div>
+          <div class="bg-[#F9DF8A] space-y-5 flex flex-col items-center rounded-lg py-10" > 
+            <img src="/c1-assets/rabbit-cartoon.png" alt="rabbit-cartoon" class="bg-white p-7 rounded-full ">
+
+            <h2 class="text-xl font-bold">Rabbit</h2>
+
+            <p class="font-thin text-sm">2 Items</p>
+          </div>
+
+       </section>
+<!--trending section   -->
+       <section class=" bg-[#FFF9F4]">
+
+          <div class="mx-4 lg:mx-auto md:py-12 lg:w-9/12 lg:mb-10">
+            <h1>Trending Pet Products</h1>
+            <div class="bg-[#F9DF8A] ">
+              <h2 class="font-extrabold text-4xl"> T-Shirt For Dogs</h2>
+  
+              <p>Discover a world of treats, toys, and <br> essentials handpicked for </p>
+  
+              <button class=" btn bg-whhite text-black text-xl px-10 font-bold">Shop Now</button>
+            </div>
+          </div>
+
+       </section>
 
     </main>
     <footer>
