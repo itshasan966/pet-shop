@@ -26,6 +26,7 @@
               colors: {
                 clifford: '#da373d',
                 'footer-bg':'rgba(255, 220, 38, 0.5)',
+                'footer-p' : 'rgba(17, 17, 17, 0.7)'
               }
             }
           }
@@ -339,7 +340,7 @@
         
           <div class="w-full mx-4  lg:w-9/12 lg:mx-auto">
             <h1 class="text-3xl my-10">Everyday Low Price</h1>
-            <div class="flex flex-col lg:flex-row gap-6">
+            <div class="mx-4 flex flex-col lg:flex-row gap-6">
               <!-- grooming Mitt -->
                <div class="pt-20 lg:pt-0   flex lg:items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-2xl relative">
                 <!-- text -->
@@ -373,20 +374,50 @@
        </section>
 
     </main>
-    <footer class="bg-footer-bg">
-      <!-- first column -->
-      <div>
-        <div class="flex items-center">
+    <footer class="bg-footer-bg lg:py-40 relative">
+
+      <div class="">
+        <div>
+          <img src="c1-assets/cute-pet-mid.png" alt="">
+        </div>
+      </div>
+      <div class="mx-4 grid grid-cols-1 lg:grid-cols-3 lg:w-9/12 lg:mx-auto">
+              <!-- first column -->
+      <div class="space-y-4">
+        <div class="flex items-center ">
           <img src="c1-assets/logo-footer.png" alt="paws picture" class="h-12 ">
           <a class="text-xl hidden md:block ">Browse<span class="text-yellow-400 text-=2xl">4</span>Pets</a>
         </div>
 
-        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        <p class="text-[#111111] bg-opacity-70"> Discover a world of treats, toys,<br> and essentials handpicked for your furry <br> friends</p>
       </div>
       <!-- second column -->
       <div>
-
+        <br>
+        <nav>
+          <ul class="space-y-4">
+            <li>Find a Pet</li>
+            <li>Breeds</li>
+            <li>Contact us</li>
+          </ul>
+        </nav>
       </div>
+
+      <!-- third column -->
+      <div class="space-y-4">
+        <br>
+        <br>
+        <p>Follow us</p>
+
+        <div class="flex ">
+          <img src="c1-assets/facebook.png"  alt="facebook"  class="h-8">
+          <img src="c1-assets/instagram.png" alt="instagram" class="h-8">
+          <img src="c1-assets/linkledin.png" alt="linkledin" class="h-8">
+          <img src="c1-assets/youtube.png" alt="youtube"     class="h-8" >
+        </div>
+      </div>
+      </div>
+
     </footer>
 
   
