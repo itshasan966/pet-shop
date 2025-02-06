@@ -5,7 +5,7 @@ module.exports = {
       extend: {},
       colors: {
         // Configure your color palette here
-        
+ 
       }
     },
     plugins: [],
